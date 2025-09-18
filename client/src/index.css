@@ -184,3 +184,11 @@
     transform: translateX(50%);
   }
 }
+
+/* Scroll margin to prevent fixed header overlap */
+#how-it-works,
+#benefits, 
+#future-vision,
+#about {
+  scroll-margin-top: 5rem;
+}

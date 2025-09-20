@@ -192,3 +192,129 @@
 #about {
   scroll-margin-top: 5rem;
 }
+
+/* Professional demo section animations */
+@keyframes subtle-glow {
+  0%, 100% { 
+    box-shadow: 0 0 0px rgba(255, 255, 255, 0.1);
+  }
+  50% { 
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  }
+}
+
+@keyframes gentle-float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes professional-shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes dashboard-elevation {
+  0%, 100% { 
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+  50% { 
+    box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.35);
+  }
+}
+
+@keyframes metric-appear {
+  from { opacity: 0; transform: translateY(20px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes chart-progress {
+  from { stroke-dashoffset: 113; }
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes border-glow {
+  0%, 100% { border-color: rgba(148, 163, 184, 0.5); }
+  50% { border-color: rgba(148, 163, 184, 0.8); }
+}
+
+/* Professional demo section styles */
+.demo-dashboard {
+  animation: dashboard-elevation 6s ease-in-out infinite;
+}
+
+.demo-metric-card {
+  animation: metric-appear 0.8s ease-out forwards;
+  animation-delay: calc(var(--delay) * 0.15s);
+  opacity: 0;
+}
+
+.demo-chart-circle {
+  stroke-dasharray: 113;
+  stroke-dashoffset: 113;
+  animation: chart-progress 2.5s ease-out forwards;
+  animation-delay: 0.8s;
+}
+
+.demo-play-button {
+  animation: subtle-glow 3s ease-in-out infinite;
+}
+
+.demo-floating-element {
+  animation: gentle-float 10s ease-in-out infinite;
+}
+
+.demo-shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  background-size: 200% 100%;
+  animation: professional-shimmer 3s infinite;
+}
+
+/* Professional hover effects */
+.professional-card-hover {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.professional-card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.15);
+}
+
+/* Grid pattern background */
+.bg-grid-pattern {
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Enhanced button hover effects */
+.btn-gradient-hover {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-gradient-hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.btn-gradient-hover:hover::before {
+  left: 100%;
+}
+
+/* Responsive enhancements */
+@media (max-width: 768px) {
+  .demo-dashboard {
+    transform: scale(0.9);
+  }
+  
+  .demo-floating-element {
+    animation-duration: 6s;
+  }
+}

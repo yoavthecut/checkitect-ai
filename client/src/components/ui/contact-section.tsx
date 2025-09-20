@@ -11,7 +11,7 @@ export default function ContactSection() {
         </svg>
       ),
       title: "Email Us",
-      info: "hello@checkitect.ai",
+      info: "checkitect.ai@gmail.com",
       bgColor: "bg-primary"
     },
     {
@@ -22,7 +22,7 @@ export default function ContactSection() {
         </svg>
       ),
       title: "Call Us", 
-      info: "+1 (555) 123-4567",
+      info: "0524409887",
       bgColor: "bg-secondary"
     },
     {
@@ -33,7 +33,7 @@ export default function ContactSection() {
         </svg>
       ),
       title: "Visit Us",
-      info: "San Francisco, CA", 
+      info: "Tel Aviv, Israel", 
       bgColor: "bg-accent"
     }
   ];
@@ -66,22 +66,28 @@ export default function ContactSection() {
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button 
-            className="bg-primary text-primary-foreground px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary/90 transition-colors"
+            className="bg-primary text-primary-foreground px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary/90 transition-colors relative"
             data-testid="button-schedule-demo"
           >
             <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
             </svg>
             Schedule Demo
+            <span className="absolute -top-2 -right-2 bg-amber-500 text-white text-xs px-2 py-1 rounded-full font-bold">
+              Soon
+            </span>
           </Button>
           <Button 
-            className="bg-secondary text-secondary-foreground px-8 py-4 rounded-lg text-lg font-semibold hover:bg-secondary/90 transition-colors"
+            className="bg-secondary text-secondary-foreground px-8 py-4 rounded-lg text-lg font-semibold hover:bg-secondary/90 transition-colors relative"
             data-testid="button-download-whitepaper"
           >
             <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
             </svg>
             Download Whitepaper
+            <span className="absolute -top-2 -right-2 bg-amber-500 text-white text-xs px-2 py-1 rounded-full font-bold">
+              Soon
+            </span>
           </Button>
         </div>
       </div>

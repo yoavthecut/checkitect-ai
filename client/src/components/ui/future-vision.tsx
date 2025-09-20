@@ -40,10 +40,10 @@ export default function FutureVision() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4" data-testid="future-vision-title">
-            The Future of Compliance is Here
+            Our Language Models and Knowledge Graph
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto" data-testid="future-vision-description">
-            We're building tomorrow's compliance infrastructure today, with advanced capabilities that will transform urban planning.
+            We combine domain-tuned language models with a regulation database and a structured knowledge graph to interpret plans, map rules, and explain outcomes.
           </p>
         </div>
 
@@ -51,9 +51,18 @@ export default function FutureVision() {
           {features.map((feature) => (
             <div 
               key={feature.id}
-              className="bg-card border border-border rounded-xl p-8 text-center"
+              className={`bg-card border border-border rounded-xl p-8 text-center ${feature.id === 'future-3d-simulations' ? 'relative' : ''}`}
               data-testid={feature.id}
             >
+              {/* Coming in the Future Badge - Only for 3D Simulations */}
+              {feature.id === 'future-3d-simulations' && (
+                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                  <div className="bg-gradient-to-r from-amber-500 to-orange-500 text-white px-4 py-1 rounded-full text-xs font-bold shadow-lg">
+                    Coming in the Future
+                  </div>
+                </div>
+              )}
+              
               <div className={`w-20 h-20 ${feature.gradient} rounded-2xl flex items-center justify-center mx-auto mb-6`}>
                 {feature.icon}
               </div>
@@ -75,7 +84,7 @@ export default function FutureVision() {
             <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
             </svg>
-            <span className="font-medium">Coming in 2024-2025</span>
+            <span className="font-medium">Coming in late 2025 - 2026</span>
           </div>
         </div>
       </div>

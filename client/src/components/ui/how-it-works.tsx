@@ -3,86 +3,94 @@ export default function HowItWorks() {
     {
       id: "step-1",
       icon: (
-        <svg className="w-8 h-8 text-primary-foreground" fill="currentColor" viewBox="0 0 20 20">
-          <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM6.293 6.707a1 1 0 010-1.414l3-3a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L11 5.414V13a1 1 0 11-2 0V5.414L7.707 6.707a1 1 0 01-1.414 0z" clipRule="evenodd" />
+        <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
         </svg>
       ),
       title: "Data Input",
       description: "Upload building plans, CAD files, or architectural drawings directly into our platform",
-      bgColor: "bg-primary"
+      bgColor: "bg-gradient-to-br from-blue-500 to-blue-600"
     },
     {
       id: "step-2", 
       icon: (
-        <svg className="w-8 h-8 text-secondary-foreground" fill="currentColor" viewBox="0 0 20 20">
-          <path fillRule="evenodd" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" clipRule="evenodd" />
+        <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
         </svg>
       ),
       title: "AI Analysis", 
       description: "Advanced algorithms analyze plans against municipal building codes and regulations",
-      bgColor: "bg-secondary"
+      bgColor: "bg-gradient-to-br from-emerald-500 to-emerald-600"
     },
     {
       id: "step-3",
       icon: (
-        <svg className="w-8 h-8 text-accent-foreground" fill="currentColor" viewBox="0 0 20 20">
-          <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+        <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       ),
       title: "Compliance Check",
       description: "Comprehensive verification against safety, zoning, and accessibility standards",
-      bgColor: "bg-accent"
+      bgColor: "bg-gradient-to-br from-amber-500 to-amber-600"
     },
     {
       id: "step-4",
       icon: (
-        <svg className="w-8 h-8 text-primary-foreground" fill="currentColor" viewBox="0 0 20 20">
-          <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clipRule="evenodd" />
+        <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
         </svg>
       ),
       title: "Findings Report",
       description: "Detailed compliance report with issues, recommendations, and solutions",
-      bgColor: "bg-primary"
+      bgColor: "bg-gradient-to-br from-blue-500 to-blue-600"
     },
-    {
-      id: "step-5",
-      icon: (
-        <svg className="w-8 h-8 text-secondary-foreground" fill="currentColor" viewBox="0 0 20 20">
-          <path fillRule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clipRule="evenodd" />
-        </svg>
-      ),
-      title: "Continuous Updates",
-      description: "Real-time monitoring of regulation changes and automatic compliance updates", 
-      bgColor: "bg-secondary"
-    }
   ];
 
   return (
-    <section id="how-it-works" className="py-16 bg-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4" data-testid="how-it-works-title">How Checkitect AI Works</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto" data-testid="how-it-works-description">
-            Our AI-powered platform streamlines the entire compliance verification process in five simple steps.
+    <section id="how-it-works" className="py-32 bg-gradient-to-br from-slate-50 to-white relative overflow-hidden">
+      {/* Bold background pattern */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `radial-gradient(circle at 2px 2px, rgba(59,130,246,0.2) 2px, transparent 0)`,
+          backgroundSize: '32px 32px'
+        }}></div>
+      </div>
+      
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
+        <div className="text-center mb-24">
+          <div className="inline-flex items-center px-6 py-3 bg-blue-100 border-2 border-blue-300 rounded-full text-base font-bold text-blue-800 mb-10 shadow-lg">
+            <div className="w-3 h-3 bg-blue-600 rounded-full mr-4 animate-pulse"></div>
+            Process Overview
+          </div>
+          
+          <h2 className="text-6xl lg:text-7xl font-bold text-slate-900 leading-tight tracking-tight mb-10" data-testid="how-it-works-title">
+            How Checkitect AI{" "}
+            <span className="font-black bg-gradient-to-r from-blue-600 via-blue-700 to-emerald-600 bg-clip-text text-transparent drop-shadow-lg">
+              Works
+            </span>
+          </h2>
+          <p className="text-2xl text-slate-700 leading-relaxed max-w-5xl mx-auto font-medium" data-testid="how-it-works-description">
+            Our AI-powered platform streamlines the entire compliance verification process in four simple steps.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 lg:gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {steps.map((step, index) => (
             <div 
               key={step.id}
-              className="process-step text-center animate-slide-up"
+              className="text-center group professional-card-hover"
               style={{ animationDelay: `${index * 0.1}s` }}
               data-testid={step.id}
             >
-              <div className={`w-20 h-20 ${step.bgColor} rounded-2xl flex items-center justify-center mx-auto mb-6`}>
+              <div className={`w-28 h-28 ${step.bgColor} rounded-3xl flex items-center justify-center mx-auto mb-8 shadow-2xl group-hover:shadow-3xl group-hover:scale-110 transition-all duration-500 relative overflow-hidden`}>
                 {step.icon}
+                <div className="absolute inset-0 bg-white/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
-              <div className="bg-card border border-border rounded-xl p-6 h-48 flex flex-col justify-center">
-                <h3 className="text-lg font-semibold text-foreground mb-3" data-testid={`${step.id}-title`}>
+              <div className="bg-white border-2 border-slate-200/50 rounded-3xl p-8 h-72 flex flex-col justify-center shadow-xl group-hover:shadow-2xl group-hover:border-blue-300/50 transition-all duration-500">
+                <h3 className="text-2xl font-bold text-slate-900 mb-6" data-testid={`${step.id}-title`}>
                   {step.title}
                 </h3>
-                <p className="text-muted-foreground text-sm" data-testid={`${step.id}-description`}>
+                <p className="text-lg text-slate-700 leading-relaxed font-medium" data-testid={`${step.id}-description`}>
                   {step.description}
                 </p>
               </div>
